@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="b06aeedd-b8d1-4738-b209-b2bb1bff645c" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b06aeedd-b8d1-4738-b209-b2bb1bff645cfileName">TestCase-1</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="restrequest" name="Request 1" id="b49f9055-ff08-482f-9242-c11445799dea">
+    <con:settings/>
+    <con:config service="http://dummy.restapiexample.com" resourcePath="/api/v1/employee/1" methodName="1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Request 1" id="1f982941-9edc-4e27-a2b5-ff9226fd8740" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://dummy.restapiexample.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://dummy.restapiexample.com/api/v1/employee/1</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="9354b804-7c89-47ca-ac14-f2aae8afc021" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="groovy" name="Groovy Script" id="9767680f-c7d8-46a7-979e-2e048ebab5d9">
+    <con:settings/>
+    <con:config>
+      <script>log.info "test"</script>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

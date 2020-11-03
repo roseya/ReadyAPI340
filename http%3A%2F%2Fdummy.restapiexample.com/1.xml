@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="1" path="/api/v1/employee/1" id="67b5b0b3-96c1-4c7c-acf8-26b97a1fba17" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="67b5b0b3-96c1-4c7c-acf8-26b97a1fba17fileName">1</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="1" id="52014960-a418-4678-853f-1482a442bb9c" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element xmlns:ns="http://dummy.restapiexample.com/api/v1/employee/1">ns:Response</con:element>
+    </con:representation>
+    <con:request name="Request 1" id="1f982941-9edc-4e27-a2b5-ff9226fd8740" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://dummy.restapiexample.com</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>
